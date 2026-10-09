@@ -15,6 +15,16 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
+## Install it as a desktop app
+
+The dashboard is an installable web app. It opens in its own window with the Hilaal icon and works offline.
+It has to be opened from a web address (not a double-clicked file) for the browser to offer the install option.
+
+1. Go to https://app.netlify.com/drop and sign up (free).
+2. Drag the dashboard folder onto the page. You'll get a web address.
+3. Open that address in Chrome or Edge, then click the install icon at the right end of the address bar.
+   On a Mac with Safari: **File → Add to Dock**.
+
 ## Your data
 
 Everything is saved in the browser you use it in. It is not sent anywhere.

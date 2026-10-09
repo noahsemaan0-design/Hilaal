@@ -661,3 +661,7 @@ window.addEventListener('hashchange', () => { render(); window.scrollTo(0, 0); }
   if (saved) state = { ...EMPTY_STATE(), ...saved, brand: { ...EMPTY_STATE().brand, ...(saved.brand || {}) } };
   render();
 })();
+
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
